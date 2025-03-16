@@ -29,10 +29,16 @@ class page4 : AppCompatActivity() {
         }
 
 
-        val button5 = findViewById<Button>(R.id.button3)
-        button5.setOnClickListener {
+        val button3 = findViewById<Button>(R.id.button3)
+        button3.setOnClickListener {
             val intent5 = Intent(this, page5_login::class.java)
             startActivity(intent5)
+        }
+
+        val button4 = findViewById<Button>(R.id.button5)
+        button4.setOnClickListener {
+            val intent6 = Intent(this, page6_register::class.java)
+            startActivity(intent6)
         }
 
     }

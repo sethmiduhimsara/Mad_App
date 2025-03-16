@@ -67,6 +67,7 @@
         android:hint="e-mail"
         android:inputType="textEmailAddress"
         android:textColorHint="#626262"
+        android:textColorLink="#070707"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
