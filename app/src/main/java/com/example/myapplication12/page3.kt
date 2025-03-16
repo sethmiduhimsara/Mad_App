@@ -1,8 +1,10 @@
 package com.example.myapplication12
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Window
 import android.view.WindowManager
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -26,6 +28,15 @@ class page3 : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        val button4 = findViewById<Button>(R.id.button4)
+        button4.setOnClickListener {
+            val intent4 = Intent(this, page4::class.java)
+            startActivity(intent4)
+        }
+
+
+
     }
 }
 //testing
