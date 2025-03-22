@@ -1,16 +1,14 @@
 package com.example.myapplication12
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.Window
 import android.view.WindowManager
-import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class page6_register : AppCompatActivity() {
+class activity_start_app1_ui : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         // Remove the title bar
@@ -22,17 +20,11 @@ class page6_register : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         enableEdgeToEdge()
-        setContentView(R.layout.activity_page6_register)
+        setContentView(R.layout.activity_start_app1_ui)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
-        }
-
-        val button8 = findViewById<Button>(R.id.button)
-        button8.setOnClickListener {
-            val intent8 = Intent(this, activity_start_app1_ui::class.java)
-            startActivity(intent8)
         }
     }
 }
