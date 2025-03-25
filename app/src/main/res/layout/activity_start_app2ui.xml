@@ -42,7 +42,7 @@
         android:id="@+id/button12"
         android:layout_width="337dp"
         android:layout_height="75dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="28dp"
         android:background="@drawable/button_gradient"
         android:bottomLeftRadius="200dp"
         android:bottomRightRadius="200dp"

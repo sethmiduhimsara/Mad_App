@@ -12,19 +12,13 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class start_app_6ui : AppCompatActivity() {
-
-    // Declare the views as properties
+class start_app_8ui : AppCompatActivity() {
     private lateinit var radioOptionA: RadioButton
     private lateinit var radioOptionB: RadioButton
     private lateinit var radioOptionC: RadioButton
     private lateinit var radioOptionD: RadioButton
-//    private lateinit var submitButton: Button
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        // Remove the title bar (must be called before setContentView)
         requestWindowFeature(Window.FEATURE_NO_TITLE)
 
         // Remove the status bar
@@ -62,22 +56,29 @@ class start_app_6ui : AppCompatActivity() {
         ////            }
         ////        } needed
         radioOptionB.isChecked = true
-
-        // Set up click listener for submit button
-
-
+        enableEdgeToEdge()
+        setContentView(R.layout.activity_start_app8ui)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        var button15 = findViewById<Button>(R.id.button22)
-        button15.setOnClickListener {
-            val intent16 = Intent(this,start_app_7ui::class.java)
-            startActivity(intent16)
-        }
-    }
 
+
+        var button17 = findViewById<Button>(R.id.button26)
+        button17.setOnClickListener {
+            val intent18 = Intent(this,start_app_7ui::class.java)
+            startActivity(intent18)
+        }
+
+        var button18 = findViewById<Button>(R.id.button25)
+        button18.setOnClickListener {
+            val intent19 = Intent(this,start_app_9ui::class.java)
+            startActivity(intent19)
+        }
+
+
+    }
     private fun hideNavigationBar() {
         val decorView = window.decorView
         val uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION or

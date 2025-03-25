@@ -12,19 +12,15 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class start_app_6ui : AppCompatActivity() {
-
+class start_app_7ui : AppCompatActivity() {
     // Declare the views as properties
     private lateinit var radioOptionA: RadioButton
     private lateinit var radioOptionB: RadioButton
     private lateinit var radioOptionC: RadioButton
     private lateinit var radioOptionD: RadioButton
-//    private lateinit var submitButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        // Remove the title bar (must be called before setContentView)
         requestWindowFeature(Window.FEATURE_NO_TITLE)
 
         // Remove the status bar
@@ -64,17 +60,18 @@ class start_app_6ui : AppCompatActivity() {
         radioOptionB.isChecked = true
 
         // Set up click listener for submit button
-
-
+        enableEdgeToEdge()
+        setContentView(R.layout.activity_start_app7ui)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        var button15 = findViewById<Button>(R.id.button22)
-        button15.setOnClickListener {
-            val intent16 = Intent(this,start_app_7ui::class.java)
-            startActivity(intent16)
+
+        var button16 = findViewById<Button>(R.id.button23)
+        button16.setOnClickListener {
+            val intent17 = Intent(this,start_app_8ui::class.java)
+            startActivity(intent17)
         }
     }
 

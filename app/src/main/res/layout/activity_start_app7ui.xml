@@ -5,31 +5,18 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".start_app_6ui">
+    tools:context=".start_app_7ui">
 
     <ImageView
-        android:id="@+id/imageView43"
+        android:id="@+id/imageView44"
         android:layout_width="106dp"
         android:layout_height="105dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="21dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintHorizontal_bias="0.91"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo_preview" />
-
-    <TextView
-        android:id="@+id/textView31"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:text="Question 01"
-        android:textSize="20sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView43" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/questionCardView"
@@ -41,8 +28,9 @@
         app:cardBackgroundColor="#b8d8e8"
         app:cardCornerRadius="12dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView31">
+        app:layout_constraintTop_toBottomOf="@+id/textView35">
 
         <TextView
             android:id="@+id/textView34"
@@ -52,16 +40,29 @@
             android:text="Which financial ratio measures a company's ability to pay its short-term obligations?"
             android:textAlignment="center"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="31dp"
+            tools:layout_editor_absoluteY="221dp" />
+
     </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Question 2"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView44" />
 
     <RadioGroup
         android:id="@+id/answerOptions"
         android:layout_width="326dp"
         android:layout_height="321dp"
-        android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
         android:background="@drawable/checkbox_background"
         android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -110,7 +111,7 @@
     </RadioGroup>
 
     <Button
-        android:id="@+id/button22"
+        android:id="@+id/button23"
         android:layout_width="117dp"
         android:layout_height="62dp"
         android:backgroundTint="#1353B4"
@@ -121,4 +122,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/answerOptions" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
